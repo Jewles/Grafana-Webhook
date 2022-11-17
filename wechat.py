@@ -35,7 +35,7 @@ def IssueCreate():
     t1 = str(re.findall(r"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})", time))
     t2 = str(re.sub("T", " ", t1))
     wechat = wechat_work_webhook.connect(
-        "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=13717f3c-5249-4061-aff1-284d739bffb5")
+        "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=You Token")
     wechat.markdown('告警主题: ' + '['+ state +']' + title +'\n'
                     '告警信息: '+ des +'\n'
                     '告警时间： ' + t2
