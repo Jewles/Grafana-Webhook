@@ -15,9 +15,9 @@ import pytz
 app = Flask(__name__)
 
 #钉钉机器人 access_token
-ACCESS_TOKEN = "986036cfcd1e5fe7fdcd601f531a6b6aa3fcc1f8840dd6c7a86e5dacc2726e82"
+ACCESS_TOKEN = "your_token"
 #钉钉 webhook 加签密钥（可选安全验证）
-SECRET = "SEC067d355ecc2bd01700bf673b8f09d0aad3d3a690ce3d0c408f3afea77262bc32"
+SECRET = "your_SE"
 #设置本地时区为中国标准时间（UTC+8)
 LOCAL_TZ = pytz.timezone('Asia/Shanghai')
 
